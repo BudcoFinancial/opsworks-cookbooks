@@ -71,6 +71,9 @@ server {
   <% if @application[:ssl_certificate_ca] -%>
   ssl_client_certificate /etc/nginx/ssl/<%= @application[:domains].first %>.ca;
   <% end -%>
+  <% if node[:nginx] && node[:nginx][:ssl_dhparam] %>
+  ssl_dhparam <%= node[:nginx][:ssl_dhparam] %>;
+  <% end %>
 
   keepalive_timeout 5;
 
