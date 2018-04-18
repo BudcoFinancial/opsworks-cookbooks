@@ -38,7 +38,9 @@ http {
   <% end %>
 
   client_max_body_size <%= node[:nginx][:client_max_body_size] %>;
+  <%= if node[:nginx][:max_ranges].present? %>
   max_ranges <%= node[:nginx][:max_ranges] %>;
+  <% end %>
 
   server_names_hash_bucket_size <%= node[:nginx][:server_names_hash_bucket_size] %>;
 
