@@ -10,3 +10,5 @@
 #
 #normal[:nginx][:gzip] = 'off'
 #normal[:nginx][:gzip_static] = 'off'
+
+normal[:nginx][:max_ranges] = 1
