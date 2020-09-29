@@ -1,3 +1,3 @@
 [submodule "opsworks-cookbook-custom-env"]
 	path = opsworks-cookbook-custom-env
-	url = git@github.com:BudcoFinancial/opsworks-cookbook-custom-env.git
+	url = https://github.com/BudcoFinancial/opsworks-cookbook-custom-env.git
